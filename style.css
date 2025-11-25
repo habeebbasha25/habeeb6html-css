@@ -1,0 +1,173 @@
+@import url("path-to-your-UniSans.css");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Uni Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  border: 2px solid #667eea;
+  width: 600px;
+  margin: 0px auto;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 45px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #667eea 0%, #667eea 100%);
+  box-shadow: 2px 4px 30px #667eea;
+  margin-bottom: 30px;
+  font-weight: 1000px;
+}
+form {
+  width: 700px;
+  margin: auto;
+  padding: 10px;
+}
+fieldset {
+  border: 2px solid rgba(102, 126, 234, 0.5);
+  border-radius: 25px;
+  background: linear-gradient(
+    135deg,
+    rgba(30, 30, 60, 0.9) 0%,
+    rgba(20, 20, 40, 0.95) 100%
+  );
+  padding: 30px;
+  margin: 25px;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.2),
+    inset 0 1px 0 rgba(255, 255,  255,  0.1);
+}
+legend {
+  color: #e0d9d9;
+  border: 2px solid #1f7d53;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 20px;
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #667eea 0%, #667eea 100%);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+  letter-spacing: 1px;
+}
+table {
+  width: 100%;
+}
+td {
+  padding: 12px 12px;
+}
+label {
+  color: #e0e7ff;
+  font-weight: 600;
+  font-size: 18px;
+  text-shadow: 0 2px 4px rgba(0,  0,  0,  0.3);
+}
+input,
+select,
+textarea {
+  border-radius: 15px;
+  padding: 14px 18px;
+  font-size: 15px;
+  width: 80%;
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(240, 240, 255, 0.95) 100%
+  );
+  box-shadow: 0 4px 15px rgba(0,  0,  0,  0.1);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2),
+    0 8px 25px rgba(102, 126,  234,  0.3);
+}
+input[readonly] {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+  font-weight: 600;
+  border-color: #ff8787;
+}
+input[type="radio"] {
+  width: 22px;
+  height: 22px;
+  accent-color: #667eea;
+}
+input[type="file"] {
+  background: linear-gradient(135deg, #667eea 0%, #667eea 100%);
+  color: white;
+  border: 2px solid rgba(102, 126, 234, 0.5);
+  width: 80%;
+  font-weight: 600;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  margin-top: 15px;
+  width: 48%;
+  background: linear-gradient(135deg, #667eea 0%, #667eea 100%);
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+textarea {
+  resize: none;
+}
+p {
+  display: none;
+  color: #1a1a2e;
+  border: 2px solid rgba(102, 126, 234, 0.5);
+  border-radius: 15px;
+  background: linear-gradient(135deg, #c3cfe2 0%, #e0e7ff 100%);
+  padding: 12px 18px;
+  font-size: 12px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+  font-weight: 600;
+}
+
+input:focus + p {
+  display: block;
+}
+span {
+  color: #ff6b6b;
+  font-weight: 700;
+}
+img {
+  height: 20px;
+  width: 20px;
+  display: none;
+}
+input[type="email"]:focus:valid + p ~ img.valid {
+  display: inline;
+}
+input[type="email"]:focus:invalid + p ~ img.invalid {
+  display: inline;
+}
+input[type="radio"]:checked {
+  transform: scale(1.4);
+}
+
+input[type="radio"]:checked + label {
+  color: #667eea;
+  margin-left: 5px;
+  text-shadow: 0 0 15px rgba(60, 96, 206, 0.8);
+  font-weight: 700;
+}
+
+input[type="reset"]:active,
+input[type="submit"]:active {
+  box-shadow: 0 4px 15px rgba(234, 102, 203, 0.6);
+}

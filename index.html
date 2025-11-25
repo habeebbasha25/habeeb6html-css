@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoginForm</title>
+    <link rel="icon" href="login.jpeg" />
+    <link rel="stylesheet" href="/HTML6/style.css" />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form action="/HTML6/message.html">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="name">FirstName<span>*</span></label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="Firstname"
+                id="fn"
+                required
+                placeholder="Ex:Basha"
+              />
+              <p>Enter your first name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="surname">Surname</label></td>
+            <td>
+              <input
+                type="text"
+                name="surname"
+                id="surna"
+                placeholder="Ex:Shaik"
+              />
+              <p>Enter your surname(Optional)</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="number">Mobile Number<span>*</span></label>
+            </td>
+            <td>
+              <input
+                type="tel"
+                id="num"
+                name="number"
+                placeholder="Ex: 9014667950"
+                minlength="10"
+                maxlength="10"
+                required
+              />
+              <p>Enter your 10-digit mobile number</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email<span>*</span></label>
+            </td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="gmail"
+                required
+                placeholder="Ex:habeeb@gmail.com"
+              />
+              <p>Enter a valid email address</p>
+              <img class="valid" src="correct.png" alt="valid" />
+              <img class="invalid" src="wrong.png" alt="invalid" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Password<span>*</span></label>
+            </td>
+            <td>
+              <input
+                type="password"
+                minlength="5"
+                maxlength="10"
+                name="password"
+                id="password"
+                required
+                placeholder="Min 6 charaacters"
+              />
+              <p>
+                Password must have 1 Upperrcase 1 Lowercase 1 Number 1 Special
+                character
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Confirm Password<span>*</span></label>
+            </td>
+            <td>
+              <input
+                type="password"
+                minlength="5"
+                maxlength="10"
+                name="password"
+                id="password"
+                required
+                placeholder="Min 6 characters"
+              />
+              <p>
+                Password must have 1 Upperrcase 1 Lowercase 1 Number 1 Special
+                character
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="dateOfBirth">DOB<span>*</span></label>
+            </td>
+            <td><input type="date" name="dob" id="DOB" required /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="gender">Gender<span>*</span></label>
+            </td>
+            <td>
+              <input type="radio" name="gender" value="female" required /><label
+                for="female"
+                >Female</label
+              >
+              <input type="radio" name="gender" value="male" required /><label
+                for="male"
+                >Male</label
+              >
+              <input type="radio" name="gender" value="others" required /><label
+                for="others"
+                >Others</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="selectcountry">Select Country<span>*</span></label>
+            </td>
+            <td>
+              <select name="" id="" required>
+                <option value="Select">--Select--</option>
+                <option value="india">India</option>
+                <option value="japan">Japan</option>
+                <option value="Canada">Canada</option>
+                <option value="Germany">Germany</option>
+                <option value="australia">Australia</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="picture">Upload Picture<span>*</span></label>
+            </td>
+            <td><input required type="file" name="file" id="file" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+
+        <table>
+          <tr>
+            <td>
+              <label for="course"
+                >Select Course <span style="color: red">*</span></label
+              >
+            </td>
+            <td>
+              <select id="course" name="course" required>
+                <option value="">--Select--</option>
+                <option value="javafullstack">Java Full Stack</option>
+                <option value="pythonfullstack">Python Full Stack</option>
+                <option value="datanalyst">Data Analyst</option>
+                <option value="frontend">Frontend Developer</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="mode"
+                >Delivery Mode <span style="color: red">*</span></label
+              >
+            </td>
+            <td>
+              <input
+                type="radio"
+                id="online"
+                name="mode"
+                value="online"
+                required
+              />
+              <label for="online">ONLINE</label>
+
+              <input
+                type="radio"
+                id="offline"
+                name="mode"
+                value="offline"
+                required
+              />
+              <label for="offline">OFFLINE</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="institutename">Institute Name</label>
+            </td>
+            <td colspan="3">
+              <input type="text" value="TAP ACADEMY" readonly />
+            </td>
+          </tr>
+        </table>
+        <label for="comment">Comments</label><br />
+        <textarea
+          name="message"
+          rows="5"
+          cols="50"
+          placeholder="Ex:Write somthing..."
+        ></textarea
+        ><br />
+        <input type="reset" name="reset" id="resetbutton" />
+        <input type="submit" name="message" id="mes" />
+      </fieldset>
+    </form>
+  </body>
+</html>
